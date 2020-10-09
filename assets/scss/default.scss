@@ -1,0 +1,526 @@
+@media screen and (min-width: $xs) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        height: 100%;
+        scroll-behavior: smooth;
+    }
+
+    @font-face {
+        font-family: UniSansRegular;
+        src: url(../fonts/uni-sans-regular.ttf);
+    }
+
+    @font-face {
+        font-family: UniSansBookItalic;
+        src: url(../fonts/uni-sans-book-italic.ttf);
+    }
+
+    @font-face {
+        font-family: UniSansSemiBoldItalic;
+        src: url(../fonts/uni-sans-semi-bold-italic.ttf);
+    }
+
+    @font-face {
+        font-family: UniSansSemiBold;
+        src: url(../fonts/uni-sans-semi-bold.ttf);
+    }
+
+    @font-face {
+        font-family: UniSansBold;
+        src: url(../fonts/uni-sans-bold.ttf);
+    }
+
+    body {
+        font-family: UniSansRegular;
+        overflow-x: hidden;
+    }
+
+    .h1 {
+        font-style: normal;
+        font-size: 32px;
+        line-height: 110.5%;
+    }
+
+    .h2 {
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .h3 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .p2 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .btn {
+        font-family: UniSansBold;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        border-radius: 10px;
+        height: 56px;
+        box-sizing: border-box;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .regular {
+        font-family: UniSansRegular;
+    }
+
+    .bold {
+        font-family: UniSansBold;
+        font-style: normal;
+        font-weight: bold;
+    }
+
+    .italic {
+        font-family: UniSansBookItalic;
+        font-style: italic;
+        font-weight: normal;
+    }
+
+    .bold-italic {
+        font-family: UniSansSemiBoldItalic;
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    .uppercase {
+        text-transform: uppercase;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .cursor-pointer {
+        cursor: pointer;
+    }
+
+    .underline {
+        text-decoration: underline;
+    }
+
+    .links-menu {
+        display: none;
+        width: 100vw;
+        height: 50vh;
+        padding: 20px;
+        background-color: #0d3643;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+
+       a{
+           display: block;
+           margin-top: 20px;
+       }
+    }
+
+    .bg01 {
+        width: 100%;
+        min-height: 932px;
+        background-image: url(../img/bg-header-mobile.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .bg02 {
+        background-color: #c4c4c4;
+    }
+
+    .bg03 {
+        background-image: url(../img/bg-mobile-sem-sair-de-casa.svg);
+        background-size: cover;
+    }
+
+    .bg04 {
+        background-color: #0d3643;
+        position: relative;
+    }
+
+    .detalhe-bg04 {
+        width: 30%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .bg05 {
+        background-image: url(../img/bg05-mobile.svg);
+        min-height: 725px;
+        background-size: cover;
+    }
+
+    .border4-mobile {
+        border-bottom: 2px solid rgba(193, 254, 201, 0.5);
+    }
+
+    .borda-formulario {
+        height: 2px;
+        background: rgba(193, 254, 201, 0.3);
+    }
+
+    form {
+        input[type="text"],
+        input[type="email"] {
+            background-color: transparent;
+            border-radius: 10px;
+            height: 51px;
+
+            &::placeholder {
+                color: #c1fec9;
+            }
+        }
+
+        select.error,
+        input.error {
+            border-color: red;
+            margin-bottom: 0px;
+        }
+
+        label.error {
+            color: red;
+            font-size: 14px;
+        }
+    }
+
+    .position-whatsapp {
+        position: fixed;
+        right: 5px;
+        bottom: 80px;
+        z-index: 10;
+    }
+
+
+    .w-icones {
+        width: 30%;
+    }
+
+    #s06 {
+        .flickity-page-dots .dot {
+            background: transparent;
+            border: 1px solid #c1fec9;
+        }
+
+        .flickity-page-dots .dot.is-selected {
+            background: #c1fec9;
+        }
+    }
+
+    #s07 {
+        .flickity-page-dots .dot {
+            background: transparent;
+            border: 1px solid #0d3643;
+        }
+
+        .flickity-page-dots .dot.is-selected {
+            background: #0d3643;
+        }
+    }
+
+    .border-duvidas {
+        border: 2px solid #c1fec9;
+        border-radius: 11px;
+    }
+
+    .titulos-footer {
+        text-align: center;
+    }
+
+    .mb-section {
+        margin-bottom: 80px;
+    }
+
+    .bg-card{
+        height: 238px;
+        border: none;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+    }
+
+    .card-texto{
+        position: absolute;
+        bottom: 55px;
+    }
+
+    .bg-card1{
+        background-image: url(../img/cnhCassada.svg);
+    }
+
+    .bg-card2{
+        background-image: url(../img/cnhSuspensa.svg);
+    }
+
+    .bg-card3{
+        background-image: url(../img/bafometro.svg);
+    }
+
+    .bg-card4{
+        background-image: url(../img/documentosGeral.svg);
+    }
+
+    #modal{
+        display: none;
+        width: 80%;
+        height: 500px;
+        position: absolute;
+        top: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        background-color: #C4C4C4;
+       
+    }
+
+}
+
+@media screen and (min-width: $sm) {
+}
+
+@media screen and (min-width: $md) {
+}
+
+@media screen and (min-width: $lg) {
+    .h1 {
+        font-weight: normal;
+        font-size: 44px;
+        line-height: 49px;
+    }
+
+    .h2 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .h3 {
+        font-size: 26px;
+        line-height: 31px;
+    }
+
+    .h4 {
+        font-size: 23px;
+        line-height: 27px;
+    }
+
+    .p {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .p2 {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .links-menu {
+        display: block;
+        width: auto;
+        padding: 0;
+        background-color: transparent;
+        position: initial;
+    }
+
+    .hover-link {
+        &:hover {
+            color: #c1fec9 !important;
+            text-decoration: none;
+        }
+    }
+
+    .bgc-verde01.bdc-verde01 {
+        &:hover {
+            background-color: #fff !important;
+            border-color: #fff !important;
+        }
+    }
+
+    .bgc-azul01.bdc-azul01 {
+        &:hover {
+            background-color: #63a887 !important;
+            border-color: #63a887 !important;
+        }
+    }
+
+    .bdc-verde01.c-verde01 {
+        &:hover {
+            color: #fff !important;
+            border-color: #fff !important;
+        }
+    }
+
+    .bgc-cinza02.bdc-verde02.c-azul02 {
+        &:hover {
+            color: #fff !important;
+            border-color: #63a887 !important;
+            background-color: #63a887 !important;
+        }
+    }
+
+    .instagram-button svg path:hover {
+        path {
+            fill: #fff !important;
+        }
+    }
+
+    .localizacao-hover {
+        &:hover {
+            color: #fff !important;
+        }
+    }
+
+    .insta-circulo-hover {
+        circle &:hover {
+            fill: #c1fec9 !important;
+        }
+    }
+
+    .bg01 {
+        width: 100%;
+        min-height: 768px;
+        background-image: url(../img/bg-header-desk.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .bg02 {
+        background-color: none;
+        background-image: url(../img/bg-desk-consultoria.svg);
+        background-size: cover;
+    }
+
+    .bg03 {
+        background-image: url(../img/bg-desk-resolva-sem-sair-de-casa.svg);
+        background-size: cover;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 150px;
+            height: 300px;
+            top: -200px;
+            left: 0;
+            background-image: url(../img/bg3-after.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    .borda-formulario {
+        width: 2px;
+        height: 370px;
+        background: rgba(193, 254, 201, 0.3);
+        position: absolute;
+        left: -10px;
+        top: 45px;
+    }
+
+    form {
+        .btn,
+        input[type="text"],
+        input[type="email"] {
+            min-width: 379px;
+        }
+    }
+
+    .text-align-passos {
+        text-align: left;
+    }
+
+    .border4-mobile {
+        border-bottom: none;
+    }
+
+    .border4-desk {
+        border-bottom: 2px solid rgba(193, 254, 201, 0.5);
+    }
+
+    .titulos-footer {
+        text-align: left;
+    }
+
+    .bg05 {
+        min-height: 466px;
+    }
+
+    .instagram{
+        width: 145px;
+        height: 48px;
+        background-image: url(../img/siga-nos-instagram.svg);
+        background-repeat: no-repeat;
+
+        &:hover{
+            background-image: url(../img/instagram-hover.svg);
+            background-repeat: no-repeat;
+        }
+    }
+
+    .btn-instagram{
+        width: 273px;
+        height: 56px;
+        background-image: url(../img/btn-instagram.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+
+
+        &:hover{
+            background-image: url(../img/btn-instagram-hover.svg);
+            
+        }
+    }
+
+    .bg-card{
+        border: 5px solid #F4F4F4;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (min-width: $xl) {
+}
+
+// flickity
+@media screen and (min-width: 768px) {
+    /* disable Flickity for large devices */
+    .carousel:after {
+        content: "";
+    }
+}
+
+/* flickity on by default */
+#insta:after, #consultoriaCompleta:after {
+    content: "flickity";
+    display: none;
+}
+
+@media screen and (min-width: $lg) {
+    /* disable Flickity for large devices */
+    #insta:after, #consultoriaCompleta:after {
+        content: "";
+    }
+}
